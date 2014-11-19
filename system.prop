@@ -1,6 +1,7 @@
 # Radio
 rild.libargs=-d /dev/smd0
 rild.libpath=/vendor/lib/libril-qc-qmi-1.so
+ril.subscription.types=NV,RUIM
 
 ro.telephony.default_network=10
 ro.cdma.home.operator.numeric=310004

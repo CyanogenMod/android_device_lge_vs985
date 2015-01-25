@@ -45,6 +45,9 @@ TARGET_RECOVERY_FSTAB := device/lge/vs985/rootdir/etc/fstab.g3
 TARGET_RECOVERY_UPDATER_LIBS := librecovery_updater_g3
 TARGET_RELEASETOOLS_EXTENSIONS := device/lge/vs985
 
+# NFC
+BOARD_NFC_CHIPSET := pn547
+
 # Wifi
 BOARD_HAS_QCOM_WLAN := true
 BOARD_WLAN_DEVICE := qcwcn

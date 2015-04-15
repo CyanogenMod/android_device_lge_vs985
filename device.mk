@@ -35,6 +35,10 @@ PRODUCT_PACKAGES += \
     init.galbi.bt.sh \
     init.galbi.bt_vendor.rc
 
+# Releasetools
+PRODUCT_COPY_FILES += \
+    device/lge/vs985/releasetools/baseband_assert.sh:install/bin/baseband_assert.sh
+
 # Thermal
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/thermal-engine-8974.conf:system/etc/thermal-engine-8974.conf

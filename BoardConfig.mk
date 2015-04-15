@@ -38,6 +38,9 @@ TARGET_USERIMAGES_USE_F2FS := true
 # Recovery
 TARGET_RECOVERY_FSTAB := device/lge/vs985/rootdir/etc/fstab.g3
 
+# Releasetools
+TARGET_RELEASETOOLS_EXTENSIONS := device/lge/vs985/releasetools
+
 # Wifi
 BOARD_HAS_QCOM_WLAN := true
 BOARD_WLAN_DEVICE := qcwcn

@@ -46,11 +46,14 @@ bin/netmgrd
 bin/qmuxd
 bin/rfs_access
 bin/rmt_storage
+lib/libcnefeatureconfig.so
+lib/libmdmdetect.so
 lib/libril.so
 lib/libvss_common_idl.so
 lib/libvss_common_iface.so
 lib/libvss_nv_idl.so
 lib/libvss_nv_iface.so
+lib/libxml.so
 vendor/lib/libnetmgr.so
 vendor/lib/libril-qc-qmi-1.so
 vendor/lib/libril-qcril-hook-oem.so

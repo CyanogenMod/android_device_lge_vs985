@@ -35,6 +35,10 @@ PRODUCT_PACKAGES += \
     init.galbi.bt.sh \
     init.galbi.bt_vendor.rc
 
+# Recovery
+PRODUCT_PACKAGES += \
+    librecovery_updater_g3
+
 # Wifi
 PRODUCT_PACKAGES += \
     hostapd_default.conf \

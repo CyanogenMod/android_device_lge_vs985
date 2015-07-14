@@ -19,9 +19,6 @@
 
 TARGET_OTA_ASSERT_DEVICE := g3,vs985
 
-# Assertions
-TARGET_BOARD_INFO_FILE ?= device/lge/vs985/board-info.txt
-
 # Bluetooth
 BOARD_HAVE_BLUETOOTH_QCOM := true
 BLUETOOTH_HCI_USE_MCT := true
@@ -40,10 +37,6 @@ TARGET_USERIMAGES_USE_F2FS := true
 
 # Recovery
 TARGET_RECOVERY_FSTAB := device/lge/vs985/rootdir/etc/fstab.g3
-
-# Releasetools
-TARGET_RECOVERY_UPDATER_LIBS := librecovery_updater_g3
-TARGET_RELEASETOOLS_EXTENSIONS := device/lge/vs985
 
 # Wifi
 BOARD_HAS_QCOM_WLAN := true

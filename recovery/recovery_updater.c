@@ -27,6 +27,8 @@
 
 #include "edify/expr.h"
 
+void uiPrintf(State* state, const char* format, ...);
+
 #define MAX(a, b) (((a) > (b)) ? (a) : (b))
 
 #define ALPHABET_LEN 256
@@ -163,8 +165,8 @@ Value * VerifyBasebandFn(const char *name, State *state, int argc, Expr *argv[])
 
     for (i = 0; i < argc; i++) {
         baseband_version = Evaluate(state, argv[i]);
-        if (baseband_version < 0) {
-            return ErrorAbort(state, "%s() error parsing arguments: %d",
+        if (baseband_version != NULL) {
+            return ErrorAbort(state, "%s() error parsing arguments: %s",
                 name, baseband_version);
         }
 

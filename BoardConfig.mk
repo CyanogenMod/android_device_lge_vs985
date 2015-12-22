@@ -44,10 +44,6 @@ TARGET_USERIMAGES_USE_F2FS := true
 # Recovery
 TARGET_RECOVERY_FSTAB := device/lge/vs985/rootdir/etc/fstab.g3
 
-# Releasetools
-TARGET_RECOVERY_UPDATER_LIBS := librecovery_updater_g3
-TARGET_RELEASETOOLS_EXTENSIONS := device/lge/vs985
-
 # RIL
 BOARD_RIL_CLASS := ../../../device/lge/vs985/ril/
 

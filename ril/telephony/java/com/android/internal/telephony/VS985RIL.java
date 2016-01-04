@@ -78,4 +78,14 @@ public class VS985RIL extends RIL implements CommandsInterface {
 
         return cardStatus;
     }
+
+    @Override
+    public void getRadioCapability(Message response) {
+        riljLog("getRadioCapability: returning static radio capability");
+        if (response != null) {
+            Object ret = makeStaticRadioCapability();
+            AsyncResult.forMessage(response, ret, null);
+            response.sendToTarget();
+        }
+    }
 }

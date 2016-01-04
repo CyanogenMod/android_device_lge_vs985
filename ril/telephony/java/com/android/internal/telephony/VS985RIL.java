@@ -17,6 +17,7 @@
 package com.android.internal.telephony;
 
 import android.content.Context;
+import android.os.Message;
 import android.os.Parcel;
 
 import com.android.internal.telephony.uicc.IccCardApplicationStatus;
@@ -77,5 +78,15 @@ public class VS985RIL extends RIL implements CommandsInterface {
         }
 
         return cardStatus;
+    }
+
+    @Override
+    public void getRadioCapability(Message response) {
+        riljLog("getRadioCapability: returning static radio capability");
+        if (response != null) {
+            Object ret = makeStaticRadioCapability();
+            AsyncResult.forMessage(response, ret, null);
+            response.sendToTarget();
+        }
     }
 }

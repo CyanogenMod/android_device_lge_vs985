@@ -23,19 +23,19 @@ import com.android.internal.telephony.uicc.IccCardApplicationStatus;
 import com.android.internal.telephony.uicc.IccCardStatus;
 
 /**
- * Custom Qualcomm RIL for VS980
+ * Custom Qualcomm RIL for VS985
  *
  * {@hide}
  */
-public class LgeLteRIL extends RIL implements CommandsInterface {
-    static final String LOG_TAG = "LgeLteRIL";
+public class VS985RIL extends LgeLteRIL implements CommandsInterface {
+    static final String LOG_TAG = "VS985RIL";
 
-    public LgeLteRIL(Context context, int preferredNetworkType,
+    public VS985RIL(Context context, int preferredNetworkType,
             int cdmaSubscription, Integer instanceId) {
         this(context, preferredNetworkType, cdmaSubscription);
     }
 
-    public LgeLteRIL(Context context, int networkMode, int cdmaSubscription) {
+    public VS985RIL(Context context, int networkMode, int cdmaSubscription) {
         super(context, networkMode, cdmaSubscription);
     }
 

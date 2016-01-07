@@ -49,7 +49,7 @@ TARGET_RECOVERY_UPDATER_LIBS := librecovery_updater_g3
 TARGET_RELEASETOOLS_EXTENSIONS := device/lge/vs985
 
 # RIL
-BOARD_RIL_CLASS := ../../../device/lge/vs985/ril/
+BOARD_RIL_CLASS += ../../../device/lge/vs985/ril/
 
 # Wifi
 BOARD_HAS_QCOM_WLAN := true

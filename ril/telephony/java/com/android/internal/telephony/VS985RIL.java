@@ -32,11 +32,11 @@ public class VS985RIL extends LgeLteRIL implements CommandsInterface {
 
     public VS985RIL(Context context, int preferredNetworkType,
             int cdmaSubscription, Integer instanceId) {
-        this(context, preferredNetworkType, cdmaSubscription);
+        super(context, preferredNetworkType, cdmaSubscription, instanceId);
     }
 
     public VS985RIL(Context context, int networkMode, int cdmaSubscription) {
-        super(context, networkMode, cdmaSubscription);
+        this(context, networkMode, cdmaSubscription, null);
     }
 
     @Override

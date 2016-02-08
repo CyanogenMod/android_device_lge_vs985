@@ -27,7 +27,7 @@ import com.android.internal.telephony.uicc.IccCardStatus;
  *
  * {@hide}
  */
-public class VS985RIL extends RIL implements CommandsInterface {
+public class VS985RIL extends LgeLteRIL implements CommandsInterface {
     static final String LOG_TAG = "VS985RIL";
 
     public VS985RIL(Context context, int preferredNetworkType,

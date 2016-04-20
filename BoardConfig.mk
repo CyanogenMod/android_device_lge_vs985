@@ -29,7 +29,7 @@ BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/lge/vs985/bluetooth
 
 # Kernel
 TARGET_KERNEL_CONFIG := cyanogenmod_vs985_defconfig
-TARGET_REQUIRES_BUMP := true
+PRODUCT_PRIVATE_KEY := device/lge/g3-common/bootkey.mk
 
 # NFC
 BOARD_NFC_CHIPSET := pn547

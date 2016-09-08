@@ -1,13 +1,9 @@
 # Radio
-rild.libargs=-d /dev/smd0
 rild.libpath=/vendor/lib/libril-qc-qmi-1.so
 ril.subscription.types=NV,RUIM
-
 ro.telephony.default_network=10
 ro.telephony.default_cdma_sub=0
 ro.telephony.get_imsi_from_sim=true
-ro.telephony.ril_class=VS985RIL
 ro.telephony.ril.config=needPinPukReads
 ro.ril.force_eri_from_xml=true
-
 telephony.lteOnCdmaDevice=1

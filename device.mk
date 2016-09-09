@@ -40,6 +40,10 @@ PRODUCT_PACKAGES += \
     init.galbi.bt.sh \
     init.galbi.bt_vendor.rc
 
+# Radio
+PRODUCT_PACKAGES += \
+    librmnetctl
+
 # Recovery
 PRODUCT_PACKAGES += \
     librecovery_updater_g3

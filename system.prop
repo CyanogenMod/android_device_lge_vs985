@@ -10,4 +10,4 @@ ro.telephony.ril_class=VS985RIL
 ro.telephony.ril.config=needPinPukReads
 ro.ril.force_eri_from_xml=true
 
-telephony.lteOnCdmaDevice=1
+#telephony.lteOnCdmaDevice=1

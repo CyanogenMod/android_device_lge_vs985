@@ -50,6 +50,8 @@ TARGET_RECOVERY_UPDATER_LIBS := librecovery_updater_g3
 TARGET_RELEASETOOLS_EXTENSIONS := device/lge/vs985
 
 # RIL
+BOARD_PROVIDES_LIBRIL := true
+BOARD_PROVIDES_RILD := true
 BOARD_RIL_CLASS += ../../../device/lge/vs985/ril/
 
 # Wifi

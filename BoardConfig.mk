@@ -18,6 +18,7 @@
 -include device/lge/g3-common/BoardConfigCommon.mk
 
 TARGET_OTA_ASSERT_DEVICE := g3,vs985
+TARGET_SPECIFIC_HEADER_PATH += $(LOCAL_PATH)/include
 
 # Assertions
 TARGET_BOARD_INFO_FILE ?= device/lge/vs985/board-info.txt
@@ -50,6 +51,7 @@ TARGET_RECOVERY_UPDATER_LIBS := librecovery_updater_g3
 TARGET_RELEASETOOLS_EXTENSIONS := device/lge/vs985
 
 # RIL
+BOARD_PROVIDES_LIBRIL := true
 BOARD_RIL_CLASS += ../../../device/lge/vs985/ril/
 
 # Wifi

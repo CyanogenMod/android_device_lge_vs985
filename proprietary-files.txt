@@ -31,6 +31,7 @@ vendor/lib/libqmiservices.so
 # Radio
 bin/netmgrd
 bin/qmuxd
+bin/rild
 bin/rfs_access
 bin/rmt_storage
 lib/libmdmdetect.so
